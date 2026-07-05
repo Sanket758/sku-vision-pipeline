@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore")
 np.random.seed(42)
 
 # ── paths ──────────────────────────────────────────────────────────────────
-PROJ = Path("/home/sanket758/Education/BSBI/Masters-Thesis")
+PROJ = Path(__file__).resolve().parent.parent
 OUTPUT = PROJ / "output" / "figures" / "failure_mode_examples.png"
 
 KAUFLAND = PROJ / "Dataset" / "raw" / "kaufland"

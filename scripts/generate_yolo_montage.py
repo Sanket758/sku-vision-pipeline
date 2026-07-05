@@ -19,7 +19,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path("/home/sanket758/Education/BSBI/Masters-Thesis")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_PATH = PROJECT_ROOT / "experiments/01_yolo_detection/runs/detect/runs/yolo_v8n_baseline/weights/best.pt"
 VAL_IMAGES_DIR = PROJECT_ROOT / "experiments/01_yolo_detection/data/curated_yolo/images/val"
 OUTPUT_PATH = PROJECT_ROOT / "output/figures/yolo_test_detections_montage.png"

@@ -99,7 +99,9 @@ Thesis/
 │   ├── generate_failure_montage.py  # Failure mode visualisation montage
 │   └── populate_sku_catalogue.py    # Populate SKU catalogue from master/pre-master
 │
-├── demo-ui/                         # Interactive Streamlit/Vite+React demo
+├── demo-ui/                         # [DEPRECATED] Early prototype dashboard (mock data only).
+                                 # The active annotation review tool is at:
+                                 # experiments/curated_pipeline/review_server.py
 │   ├── src/
 │   │   ├── App.jsx                  #   Main application component
 │   │   ├── App.css
@@ -535,15 +537,15 @@ Figures generated:
 
 ## Interactive Demo UI
 
-A React + Vite frontend demonstrating the retrieval system is included:
+**Note:** The `demo-ui/` directory contains only an early prototype dashboard (mock data, deprecated). It is **not** the primary annotation or review tool.
 
-```bash
-cd demo-ui
-npm install
-npm run dev
-```
+The **active** tools for interacting with the system are:
 
-The demo requires a running Python backend (see the Streamlit app in `experiments/02_retrieval_system/` for a query interface). Requires Node.js 18+.
+- **Visual Review Server** (recommended): `python experiments/curated_pipeline/review_server.py` — launches an interactive web UI for reviewing detected product crops, confirming or correcting SKU assignments, and managing the registry.
+- **FAISS Query Interface**: `python experiments/02_retrieval_system/query.py` — query the retrieval index interactively from the command line.
+- **Pipeline Batch Mode**: `python experiments/curated_pipeline/pipeline.py` — run the full detect-embed-match-review pipeline on new shelf images.
+
+See the "Reproduction Commands" sections above for usage details.
 
 ---
 
@@ -588,8 +590,74 @@ The SKU110K dataset [Goldman et al., CVPR 2019] provided the detection backbone 
 
 ## References
 
-- Goldman, E., Herzig, R., Eisenschtat, A., Goldbraikh, E., & Hassner, T. (2019). Precise Detection in Densely Packed Scenes. *CVPR 2019*.
-- Oquab, M., et al. (2024). DINOv2: Learning Robust Visual Features without Supervision. *TMLR 2024*.
-- Jocher, G., Chaurasia, A., & Qiu, J. (2023). Ultralytics YOLO. *GitHub: ultralytics/ultralytics*.
-- Radford, A., et al. (2021). Learning Transferable Visual Models From Natural Language Supervision. *ICML 2021*.
-- Sandler, M., et al. (2018). MobileNetV2: Inverted Residuals and Linear Bottlenecks. *CVPR 2018*.
+Brandes, D. and Brandes, N. (2012). *BARE ESSENTIALS the ALDI Way to Retail Success*. Books on Demand.
+
+Cai, Y., Wen, L., Zhang, L., Du, D. and Wang, W. (2021). Rethinking Object Detection in Retail Stores. *Proceedings of the AAAI Conference on Artificial Intelligence*, 35(2), pp.947 954. doi:10.1609/aaai.v35i2.16178.
+
+Cao, M. et al. (2023). Recognition of Occluded Goods under Prior Inference Based on Generative Adversarial Network. *Sensors*, 23(6), pp.3355. doi:10.3390/s23063355.
+
+Deng, J. et al. (2022). ArcFace: Additive Angular Margin Loss for Deep Face Recognition. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 44(10), pp.5962 5979. doi:10.1109/TPAMI.2021.3087709.
+
+Desmarescaux, M. et al. (2025). A Review: One-Shot Object Detection Methods for Conditional Detection of Retail and Warehouse Products. *Neural Processing Letters*, 57(2). doi:10.1007/s11063-025-11740-4.
+
+Dong, H. et al. (2023). Detection of Occluded Small Commodities Based on Feature Enhancement under Super-Resolution. *Sensors*, 23(5), pp.2439. doi:10.3390/s23052439.
+
+Follmann, P. et al. (2018). MVTec D2S: Densely Segmented Supermarket Dataset. *Proceedings of the European Conference on Computer Vision (ECCV)*, pp.569 585.
+
+Fu, Y. et al. (2025). NTIRE 2025 Challenge on Cross-Domain Few-Shot Object Detection: Methods and Results. *arXiv preprint*, arXiv:2504.10685.
+
+Ge, Z. et al. (2021). YOLOX: Exceeding YOLO Series in 2021. *arXiv preprint*, arXiv:2107.08430.
+
+Geng, W. et al. (2018). Fine-Grained Grocery Product Recognition by One-Shot Learning. *Proceedings of ACM Multimedia*.
+
+George, M. and Floerkemeier, C. (2014). Recognizing Products: a Per-exemplar Multi-label Image Classification Approach. *Proceedings of the European Conference on Computer Vision (ECCV)*, pp.440 455.
+
+Goldman, E. et al. (2019). Precise Detection in Densely Packed Scenes. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, pp.5227 5236.
+
+Guirguis, K. et al. (2022). Few-Shot Object Detection in Unseen Domains. *arXiv preprint*, arXiv:2204.05072.
+
+Jund, P. et al. (2016). The Freiburg Groceries Dataset. *arXiv preprint*, arXiv:1611.05799.
+
+Klasson, M. et al. (2019). A Hierarchical Grocery Store Image Dataset with Visual and Semantic Labels. *Proceedings of the IEEE Winter Conference on Applications of Computer Vision (WACV)*.
+
+Laitala, J. and Ruotsalainen, L. (2023). Computer Vision Based Planogram Compliance Evaluation. *Applied Sciences*, 13(18), 10145. doi:10.3390/app131810145.
+
+Lamm, B. and Keuper, J. (2024). Retail-786k: a Large-Scale Dataset for Visual Entity Matching. *arXiv preprint*, arXiv:2309.17164.
+
+Oquab, M. et al. (2023). DINOv2: Learning Robust Visual Features without Supervision. *arXiv preprint*, arXiv:2304.07193.
+
+Ou, T.-Y. et al. (2025). Real-time retail planogram compliance application using computer vision and virtual shelves. *Scientific Reports*, 15(1). doi:10.1038/s41598-025-86026-3.
+
+Peng, J., Xiao, C. and Li, Y. (2020). RP2K: A Large-Scale Retail Product Dataset for Fine-Grained Image Classification. *arXiv preprint*, arXiv:2006.12634.
+
+Pietrini, R. et al. (2024). Shelf Management: A deep learning-based system for shelf visual monitoring. *Expert Systems with Applications*, 255, 124635. doi:10.1016/j.eswa.2024.124635.
+
+Saleh, K., Szénási, S. and Vámossy, Z. (2021). Occlusion Handling in Generic Object Detection: A Review. *IEEE International Conference on Systems, Automation, and Measurement (SAMI)*.
+
+Schroff, F., Kalenichenko, D. and Philbin, J. (2015). FaceNet: A unified embedding for face recognition and clustering. *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, pp.815 823.
+
+Šikić, F. et al. (2024). Enhanced Out-of-Stock Detection in Retail Shelf Images Based on Deep Learning. *Sensors*, 24(2), 693. doi:10.3390/s24020693.
+
+Siméoni, O. et al. (2025). DINOv3. *arXiv preprint*, arXiv:2508.10104.
+
+Srivastava, M.M. (2020). Bag of Tricks for Retail Product Image Classification. *arXiv preprint*, arXiv:2001.03992.
+
+Srivastava, M.M. (2023). RetailKLIP: Finetuning OpenCLIP backbone using metric learning on a single GPU for Zero-shot retail product image classification. *arXiv preprint*, arXiv:2312.10282.
+
+Tan, L. et al. (2024). Enhanced Self-Checkout System for Retail Based on Improved YOLOv10. *Journal of Imaging*, 10(10), 248. doi:10.3390/jimaging10100248.
+
+Tur, A.O. et al. (2024). Exploring Fine-grained Retail Product Discrimination with Zero-shot Object Classification Using Vision-Language Models. *IEEE International Conference on Recent Trends in Systems Innovation (RTSI)*, pp.97 102.
+
+Wang, A. et al. (2020). Robust Object Detection under Occlusion with Context-Aware CompositionalNets. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*.
+
+Wei, X.-S. et al. (2019). RPC: A Large-Scale Retail Product Checkout Dataset. *arXiv preprint*, arXiv:1901.07249.
+
+Yazdanjouei, H. et al. (2025). A Co-Training Semi-Supervised Framework Using Faster R-CNN and YOLO Networks for Object Detection in Densely Packed Retail Images. *arXiv preprint*, arXiv:2509.09750.
+
+Yücel, M.E. and Ünsalan, C. (2022). Planogram Compliance Control via Object Detection, Sequence Alignment, and Focused Iterative Search. *arXiv preprint*, arXiv:2212.01004.
+
+Zhang, Z. et al. (2021). ViT-YOLO: Transformer-Based YOLO for Object Detection. *Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)*, pp.2799 2808.
+
+Zhao, C., Wan, J. and Chan, A.B. (2025). Density-based Object Detection in Crowded Scenes. *arXiv preprint*, arXiv:2504.09819.
+
+Zhao, Y. et al. (2025). LSR-YOLO: A lightweight and fast model for retail products detection. *PLOS One*, 20(10), e0334216. doi:10.1371/journal.pone.0334216.
