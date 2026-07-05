@@ -1,0 +1,1611 @@
+{
+  "experiment": "text_query_evaluation",
+  "model": "clip-ViT-B-32",
+  "num_classes": 52,
+  "num_val_queries": 75,
+  "top_k_values": [
+    1,
+    5,
+    10
+  ],
+  "prompt_templates": {
+    "simple": "a photo of {class_name}",
+    "shelf": "a photo of {class_name} on a supermarket shelf",
+    "product": "a product photo of {class_name}",
+    "packaging": "the packaging of {class_name}",
+    "closeup": "a close-up photo of {class_name} product"
+  },
+  "best_template": "product",
+  "results_by_template": {
+    "simple": {
+      "template": "a photo of {class_name}",
+      "num_queries": 75,
+      "overall_accuracy": {
+        "top1": 0.3867,
+        "top5": 0.76,
+        "top10": 0.88
+      },
+      "per_class_accuracy": {
+        "20 Jacobs Lungo Aluminium Capsules": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "6 Inhaltstoffe Ohne Silikone L'Oréal": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Ambragues RASGÓN ROSADO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Bodegars RASGÓN TEMPRANILLO Un vino": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate": {
+          "top1_acc": 0.3333333333333333,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 9
+        },
+        "Colgate KOMPLET Colgate": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate MAX WHITE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalimayr capsa. CREMA d'Oro puntata": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr Capsa Decaffeinato Espresso For": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr capsa": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.5,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "Dallmayr capsa ORGANIC GRAN VERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalmayr capsa ORGANIC GRAN ERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.3333333333333333,
+          "top10_acc": 0.6666666666666666,
+          "num_val_images": 3
+        },
+        "Elmex 1 Kindor-Zahnpasta 2-6 Jahre": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "FREIXENET POSÉ FREIXENET ITALIAN ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Familie Wein Die Genussmanufaktur": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY GRENACHE ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY VINERY MERLOT CALIFORNIA QV1018": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "HART ORIGINAL für die tägliche Reinigung Dr.BEST": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Haltwings- ferm GEFLÜGEL- BIERSCHINKEN 150g e HOFMAIER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Maggi Mit Natürlichen": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "NIVEA MEN FRESH ACTIVE 0% 48H": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "OGX think & feel biotin & collagen CONDITIONER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Ogx Thick & Ball +": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Original Radeberger": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÔMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "RÖMER GRANATAPPEL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "RÖMER ROMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "SACHSEN OBST Schwarzer Johannisbeer Fruchtwein": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SENSODYNE": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 5
+        },
+        "Schwarzkopf GLISS HAIR RAPTURE PLUSO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Schwarzkopf Gliss Total Repair Repairer": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Sensodyne Proschmelz Repair": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO JACOBS LATTE MACCHIATO VANILLA FLAVOUR 8x TASSIMO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO Milka EXTRA TASSES EXTRA TASSES 10x": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax EXTRA FRISCH": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "dallmayr capsa. CAFFEINATO": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "dalmayr capsa BABYSA 15PPCC350": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex": {
+          "top1_acc": 0.25,
+          "top5_acc": 0.5,
+          "top10_acc": 0.75,
+          "num_val_images": 4
+        },
+        "elmex JUNIOR 6-12": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex KINDER-ZAHKPASTA": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex SENSITIVE PROFESSIONAL": {
+          "top1_acc": 0.3333333333333333,
+          "top5_acc": 0.6666666666666666,
+          "top10_acc": 1.0,
+          "num_val_images": 3
+        },
+        "elmex SENSITIVE PROFESSIONAL EFFEKTIVE SCHMERZLINDERUNG": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "meridol": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "nippon hosta PUTTREIS MIT SCHOKOLADE ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax COMPLETE PROTECTION SEHR GUT": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax ORIGINAL": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        }
+      },
+      "elapsed_seconds": 0.1
+    },
+    "shelf": {
+      "template": "a photo of {class_name} on a supermarket shelf",
+      "num_queries": 75,
+      "overall_accuracy": {
+        "top1": 0.4,
+        "top5": 0.8,
+        "top10": 0.8533
+      },
+      "per_class_accuracy": {
+        "20 Jacobs Lungo Aluminium Capsules": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "6 Inhaltstoffe Ohne Silikone L'Oréal": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Ambragues RASGÓN ROSADO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Bodegars RASGÓN TEMPRANILLO Un vino": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate": {
+          "top1_acc": 0.5555555555555556,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 9
+        },
+        "Colgate KOMPLET Colgate": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate MAX WHITE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalimayr capsa. CREMA d'Oro puntata": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr Capsa Decaffeinato Espresso For": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr capsa": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "Dallmayr capsa ORGANIC GRAN VERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalmayr capsa ORGANIC GRAN ERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.3333333333333333,
+          "top10_acc": 0.6666666666666666,
+          "num_val_images": 3
+        },
+        "Elmex 1 Kindor-Zahnpasta 2-6 Jahre": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "FREIXENET POSÉ FREIXENET ITALIAN ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Familie Wein Die Genussmanufaktur": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY GRENACHE ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY VINERY MERLOT CALIFORNIA QV1018": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "HART ORIGINAL für die tägliche Reinigung Dr.BEST": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Haltwings- ferm GEFLÜGEL- BIERSCHINKEN 150g e HOFMAIER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Maggi Mit Natürlichen": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "NIVEA MEN FRESH ACTIVE 0% 48H": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "OGX think & feel biotin & collagen CONDITIONER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Ogx Thick & Ball +": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Original Radeberger": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÔMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "RÖMER GRANATAPPEL": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÖMER ROMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SACHSEN OBST Schwarzer Johannisbeer Fruchtwein": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SENSODYNE": {
+          "top1_acc": 0.6,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 5
+        },
+        "Schwarzkopf GLISS HAIR RAPTURE PLUSO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Schwarzkopf Gliss Total Repair Repairer": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Sensodyne Proschmelz Repair": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO JACOBS LATTE MACCHIATO VANILLA FLAVOUR 8x TASSIMO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO Milka EXTRA TASSES EXTRA TASSES 10x": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax EXTRA FRISCH": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "capsa": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "dallmayr capsa. CAFFEINATO": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "dalmayr capsa BABYSA 15PPCC350": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex": {
+          "top1_acc": 0.25,
+          "top5_acc": 0.5,
+          "top10_acc": 0.5,
+          "num_val_images": 4
+        },
+        "elmex JUNIOR 6-12": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex KINDER-ZAHKPASTA": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex SENSITIVE PROFESSIONAL": {
+          "top1_acc": 0.3333333333333333,
+          "top5_acc": 0.6666666666666666,
+          "top10_acc": 1.0,
+          "num_val_images": 3
+        },
+        "elmex SENSITIVE PROFESSIONAL EFFEKTIVE SCHMERZLINDERUNG": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "meridol": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "nippon hosta PUTTREIS MIT SCHOKOLADE ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax COMPLETE PROTECTION SEHR GUT": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax ORIGINAL": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        }
+      },
+      "elapsed_seconds": 0.1
+    },
+    "product": {
+      "template": "a product photo of {class_name}",
+      "num_queries": 75,
+      "overall_accuracy": {
+        "top1": 0.44,
+        "top5": 0.7867,
+        "top10": 0.92
+      },
+      "per_class_accuracy": {
+        "20 Jacobs Lungo Aluminium Capsules": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "6 Inhaltstoffe Ohne Silikone L'Oréal": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Ambragues RASGÓN ROSADO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Bodegars RASGÓN TEMPRANILLO Un vino": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate": {
+          "top1_acc": 0.8888888888888888,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 9
+        },
+        "Colgate KOMPLET Colgate": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate MAX WHITE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalimayr capsa. CREMA d'Oro puntata": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr Capsa Decaffeinato Espresso For": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr capsa": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "Dallmayr capsa ORGANIC GRAN VERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalmayr capsa ORGANIC GRAN ERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.6666666666666666,
+          "top10_acc": 0.6666666666666666,
+          "num_val_images": 3
+        },
+        "Elmex 1 Kindor-Zahnpasta 2-6 Jahre": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "FREIXENET POSÉ FREIXENET ITALIAN ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Familie Wein Die Genussmanufaktur": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY GRENACHE ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY VINERY MERLOT CALIFORNIA QV1018": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "HART ORIGINAL für die tägliche Reinigung Dr.BEST": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Haltwings- ferm GEFLÜGEL- BIERSCHINKEN 150g e HOFMAIER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Maggi Mit Natürlichen": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "NIVEA MEN FRESH ACTIVE 0% 48H": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "OGX think & feel biotin & collagen CONDITIONER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Ogx Thick & Ball +": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Original Radeberger": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÔMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÖMER GRANATAPPEL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÖMER ROMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SACHSEN OBST Schwarzer Johannisbeer Fruchtwein": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SENSODYNE": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 5
+        },
+        "Schwarzkopf GLISS HAIR RAPTURE PLUSO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Schwarzkopf Gliss Total Repair Repairer": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Sensodyne Proschmelz Repair": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO JACOBS LATTE MACCHIATO VANILLA FLAVOUR 8x TASSIMO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO Milka EXTRA TASSES EXTRA TASSES 10x": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax EXTRA FRISCH": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "dallmayr capsa. CAFFEINATO": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "dalmayr capsa BABYSA 15PPCC350": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex": {
+          "top1_acc": 0.25,
+          "top5_acc": 0.5,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "elmex JUNIOR 6-12": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex KINDER-ZAHKPASTA": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex SENSITIVE PROFESSIONAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.6666666666666666,
+          "top10_acc": 1.0,
+          "num_val_images": 3
+        },
+        "elmex SENSITIVE PROFESSIONAL EFFEKTIVE SCHMERZLINDERUNG": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "meridol": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "nippon hosta PUTTREIS MIT SCHOKOLADE ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax COMPLETE PROTECTION SEHR GUT": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax ORIGINAL": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        }
+      },
+      "elapsed_seconds": 0.1
+    },
+    "packaging": {
+      "template": "the packaging of {class_name}",
+      "num_queries": 75,
+      "overall_accuracy": {
+        "top1": 0.4133,
+        "top5": 0.7467,
+        "top10": 0.8667
+      },
+      "per_class_accuracy": {
+        "20 Jacobs Lungo Aluminium Capsules": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "6 Inhaltstoffe Ohne Silikone L'Oréal": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Ambragues RASGÓN ROSADO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Bodegars RASGÓN TEMPRANILLO Un vino": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate": {
+          "top1_acc": 0.8888888888888888,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 9
+        },
+        "Colgate KOMPLET Colgate": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate MAX WHITE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalimayr capsa. CREMA d'Oro puntata": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr Capsa Decaffeinato Espresso For": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr capsa": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "Dallmayr capsa ORGANIC GRAN VERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalmayr capsa ORGANIC GRAN ERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.3333333333333333,
+          "top10_acc": 1.0,
+          "num_val_images": 3
+        },
+        "Elmex 1 Kindor-Zahnpasta 2-6 Jahre": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "FREIXENET POSÉ FREIXENET ITALIAN ROSÉ": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Familie Wein Die Genussmanufaktur": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY GRENACHE ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY VINERY MERLOT CALIFORNIA QV1018": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "HART ORIGINAL für die tägliche Reinigung Dr.BEST": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Haltwings- ferm GEFLÜGEL- BIERSCHINKEN 150g e HOFMAIER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Maggi Mit Natürlichen": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "NIVEA MEN FRESH ACTIVE 0% 48H": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "OGX think & feel biotin & collagen CONDITIONER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Ogx Thick & Ball +": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Original Radeberger": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÔMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "RÖMER GRANATAPPEL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÖMER ROMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SACHSEN OBST Schwarzer Johannisbeer Fruchtwein": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SENSODYNE": {
+          "top1_acc": 0.8,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 5
+        },
+        "Schwarzkopf GLISS HAIR RAPTURE PLUSO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Schwarzkopf Gliss Total Repair Repairer": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Sensodyne Proschmelz Repair": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO JACOBS LATTE MACCHIATO VANILLA FLAVOUR 8x TASSIMO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO Milka EXTRA TASSES EXTRA TASSES 10x": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax EXTRA FRISCH": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "dallmayr capsa. CAFFEINATO": {
+          "top1_acc": 0.5,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "dalmayr capsa BABYSA 15PPCC350": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "elmex": {
+          "top1_acc": 0.25,
+          "top5_acc": 0.75,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "elmex JUNIOR 6-12": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex KINDER-ZAHKPASTA": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex SENSITIVE PROFESSIONAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.3333333333333333,
+          "num_val_images": 3
+        },
+        "elmex SENSITIVE PROFESSIONAL EFFEKTIVE SCHMERZLINDERUNG": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "meridol": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "nippon hosta PUTTREIS MIT SCHOKOLADE ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax COMPLETE PROTECTION SEHR GUT": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        }
+      },
+      "elapsed_seconds": 0.1
+    },
+    "closeup": {
+      "template": "a close-up photo of {class_name} product",
+      "num_queries": 75,
+      "overall_accuracy": {
+        "top1": 0.4267,
+        "top5": 0.7733,
+        "top10": 0.8933
+      },
+      "per_class_accuracy": {
+        "20 Jacobs Lungo Aluminium Capsules": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "6 Inhaltstoffe Ohne Silikone L'Oréal": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Ambragues RASGÓN ROSADO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Bodegars RASGÓN TEMPRANILLO Un vino": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 9
+        },
+        "Colgate KOMPLET Colgate": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Colgate MAX WHITE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalimayr capsa. CREMA d'Oro puntata": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr Capsa Decaffeinato Espresso For": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dallmayr capsa": {
+          "top1_acc": 0.25,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "Dallmayr capsa ORGANIC GRAN VERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Dalmayr capsa ORGANIC GRAN ERDE": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.6666666666666666,
+          "top10_acc": 1.0,
+          "num_val_images": 3
+        },
+        "Elmex 1 Kindor-Zahnpasta 2-6 Jahre": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "FREIXENET POSÉ FREIXENET ITALIAN ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Familie Wein Die Genussmanufaktur": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY GRENACHE ROSÉ": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Gallo FAMILY VINERY MERLOT CALIFORNIA QV1018": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "HART ORIGINAL für die tägliche Reinigung Dr.BEST": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Haltwings- ferm GEFLÜGEL- BIERSCHINKEN 150g e HOFMAIER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Maggi Mit Natürlichen": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "NIVEA MEN FRESH ACTIVE 0% 48H": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "OGX think & feel biotin & collagen CONDITIONER": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Ogx Thick & Ball +": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "Original Radeberger": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÔMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "RÖMER GRANATAPPEL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "RÖMER ROMER": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SACHSEN OBST Schwarzer Johannisbeer Fruchtwein": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "SENSODYNE": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 5
+        },
+        "Schwarzkopf GLISS HAIR RAPTURE PLUSO": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Schwarzkopf Gliss Total Repair Repairer": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "Sensodyne Proschmelz Repair": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO JACOBS LATTE MACCHIATO VANILLA FLAVOUR 8x TASSIMO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "TASSIMO Milka EXTRA TASSES EXTRA TASSES 10x": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax EXTRA FRISCH": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "dallmayr capsa. CAFFEINATO": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "dalmayr capsa BABYSA 15PPCC350": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex": {
+          "top1_acc": 0.25,
+          "top5_acc": 0.75,
+          "top10_acc": 1.0,
+          "num_val_images": 4
+        },
+        "elmex JUNIOR 6-12": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex KINDER-ZAHKPASTA": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "elmex SENSITIVE PROFESSIONAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.3333333333333333,
+          "top10_acc": 0.6666666666666666,
+          "num_val_images": 3
+        },
+        "elmex SENSITIVE PROFESSIONAL EFFEKTIVE SCHMERZLINDERUNG": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "meridol": {
+          "top1_acc": 1.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 2
+        },
+        "nippon hosta PUTTREIS MIT SCHOKOLADE ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 0.0,
+          "num_val_images": 1
+        },
+        "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR": {
+          "top1_acc": 0.0,
+          "top5_acc": 0.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax COMPLETE PROTECTION SEHR GUT": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        },
+        "parorodontax ORIGINAL": {
+          "top1_acc": 0.0,
+          "top5_acc": 1.0,
+          "top10_acc": 1.0,
+          "num_val_images": 1
+        }
+      },
+      "elapsed_seconds": 0.1
+    }
+  }
+}

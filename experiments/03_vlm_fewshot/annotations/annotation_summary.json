@@ -1,0 +1,14 @@
+{
+  "total_images": 46,
+  "successful_annotations": 46,
+  "total_products": 816,
+  "sources": {
+    "vlm": 0,
+    "existing": 46
+  },
+  "processing_stats": {
+    "avg_time_per_image": 0.678240848624188,
+    "min_time": 0.09734773635864258,
+    "max_time": 1.3557319641113281
+  }
+}

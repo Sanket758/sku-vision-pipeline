@@ -1,0 +1,131 @@
+{
+  "experiment": "fewshot_nway_kshot",
+  "model": "clip-ViT-B-32",
+  "n_values": [
+    5,
+    10,
+    20
+  ],
+  "k_values": [
+    1,
+    3,
+    5
+  ],
+  "num_episodes": 100,
+  "seed": 42,
+  "num_eligible_classes": 20,
+  "eligible_classes": [
+    "Colgate",
+    "Colgate MAX WHITE",
+    "Dallmayr capsa",
+    "Dalmayr capsa ORGANIC GRAN ERDE",
+    "Elmex 1 Kindor-Zahnpasta 2-6 Jahre",
+    "Gallo FAMILY GRENACHE ROSÉ",
+    "KAYA SOUTH AFRICA 2024 CABERNET SAUVIGNON",
+    "RÖMER GRANATAPPEL",
+    "RÖMER ROMER",
+    "SENSODYNE",
+    "barorodontax ZAHNFLEISCH STÄRKUNG & SCHUTZ PRODUKTEN MINT",
+    "capsa",
+    "capsa. CREMA d'Oro INTEGRAL 100% NUTRITION",
+    "dallmayr capsa. CAFFEINATO",
+    "elmex",
+    "elmex JUNIOR 6-12",
+    "elmex SENSITIVE PROFESSIONAL",
+    "meridol",
+    "parorodontax ADVANCED ZAHNFLEISCH ACTIVE REPAIR",
+    "parorodontax COMPLETE PROTECTION SEHR GUT"
+  ],
+  "results": {
+    "N5_K1": {
+      "n_way": 5,
+      "k_shot": 1,
+      "num_episodes": 100,
+      "top1_mean": 0.83,
+      "top1_std": 0.1682,
+      "top5_mean": 1.0,
+      "top5_std": 0.0,
+      "elapsed_seconds": 0.0
+    },
+    "N5_K3": {
+      "n_way": 5,
+      "k_shot": 3,
+      "num_episodes": 100,
+      "top1_mean": 0.892,
+      "top1_std": 0.1534,
+      "top5_mean": 1.0,
+      "top5_std": 0.0,
+      "elapsed_seconds": 0.0
+    },
+    "N5_K5": {
+      "n_way": 5,
+      "k_shot": 5,
+      "num_episodes": 100,
+      "top1_mean": 0.904,
+      "top1_std": 0.1399,
+      "top5_mean": 1.0,
+      "top5_std": 0.0,
+      "elapsed_seconds": 0.0
+    },
+    "N10_K1": {
+      "n_way": 10,
+      "k_shot": 1,
+      "num_episodes": 100,
+      "top1_mean": 0.741,
+      "top1_std": 0.1312,
+      "top5_mean": 0.986,
+      "top5_std": 0.0375,
+      "elapsed_seconds": 0.0
+    },
+    "N10_K3": {
+      "n_way": 10,
+      "k_shot": 3,
+      "num_episodes": 100,
+      "top1_mean": 0.85,
+      "top1_std": 0.1118,
+      "top5_mean": 0.998,
+      "top5_std": 0.014,
+      "elapsed_seconds": 0.0
+    },
+    "N10_K5": {
+      "n_way": 10,
+      "k_shot": 5,
+      "num_episodes": 100,
+      "top1_mean": 0.869,
+      "top1_std": 0.1046,
+      "top5_mean": 1.0,
+      "top5_std": 0.0,
+      "elapsed_seconds": 0.0
+    },
+    "N20_K1": {
+      "n_way": 20,
+      "k_shot": 1,
+      "num_episodes": 100,
+      "top1_mean": 0.6,
+      "top1_std": 0.0886,
+      "top5_mean": 0.936,
+      "top5_std": 0.0464,
+      "elapsed_seconds": 0.0
+    },
+    "N20_K3": {
+      "n_way": 20,
+      "k_shot": 3,
+      "num_episodes": 100,
+      "top1_mean": 0.726,
+      "top1_std": 0.0808,
+      "top5_mean": 0.98,
+      "top5_std": 0.0324,
+      "elapsed_seconds": 0.0
+    },
+    "N20_K5": {
+      "n_way": 20,
+      "k_shot": 5,
+      "num_episodes": 100,
+      "top1_mean": 0.784,
+      "top1_std": 0.0574,
+      "top5_mean": 0.9975,
+      "top5_std": 0.0109,
+      "elapsed_seconds": 0.0
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# Environment
+.env
+.venv/
+.thesis_env/
+.test_env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dependencies
+node_modules/
+demo-ui/node_modules/
+
+# Data (uploaded separately to Kaggle)
+data/
+Dataset/
+
+# Training artifacts
+runs/
+output/
+
+# Backups
+*.bak
+*.bakup/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Agent/Infra
+.omo/
+.opencode/
+.agent*/
+.codegraph/
+.gemini/
+.faiss_index/

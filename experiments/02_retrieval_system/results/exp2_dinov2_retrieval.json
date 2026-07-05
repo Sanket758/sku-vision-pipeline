@@ -1,0 +1,873 @@
+{
+  "experiment": "dinov2_retrieval_accuracy",
+  "model": "facebook/dinov2-base",
+  "evaluation_mode": "labeled_only",
+  "limitation": "DINOv2 evaluated on labeled-only database (304 train images) while CLIP Experiment 1 uses the full 32K FAISS index. This section also includes a CLIP labeled-only baseline for fair apples-to-apples comparison.",
+  "database_size": 1181,
+  "num_val_queries": 323,
+  "num_classes": 129,
+  "embedding_dim": 768,
+  "top_k_values": [
+    1,
+    5,
+    10
+  ],
+  "dinov2_overall_accuracy": {
+    "top1": 0.808,
+    "top5": 0.9164,
+    "top10": 0.9319
+  },
+  "dinov2_per_class_accuracy": {
+    "SKU-001": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 12
+    },
+    "SKU-002": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-003": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-004": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-005": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-006": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-007": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-008": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-009": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-010": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-011": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-012": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-013": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-014": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-015": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-016": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-017": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-018": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-019": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-020": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-021": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-022": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-023": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-024": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-025": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-026": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-027": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-028": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-029": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-030": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-031": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-032": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-033": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-034": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-035": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-036": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-037": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-038": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-039": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-040": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-041": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-042": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-043": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-044": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-045": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-046": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-047": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-048": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 17
+    },
+    "SKU-049": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-050": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-051": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-052": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-053": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-054": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-055": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-056": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-057": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-058": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-059": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-060": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-061": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-062": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-063": {
+      "top1_acc": 0.6666666666666666,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 9
+    },
+    "SKU-064": {
+      "top1_acc": 0.75,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-065": {
+      "top1_acc": 0.8333333333333334,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 6
+    },
+    "SKU-066": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-067": {
+      "top1_acc": 0.5,
+      "top5_acc": 0.5,
+      "top10_acc": 0.5,
+      "num_val_images": 2
+    },
+    "SKU-068": {
+      "top1_acc": 0.75,
+      "top5_acc": 0.75,
+      "top10_acc": 0.75,
+      "num_val_images": 4
+    },
+    "SKU-069": {
+      "top1_acc": 0.75,
+      "top5_acc": 0.75,
+      "top10_acc": 1.0,
+      "num_val_images": 8
+    },
+    "SKU-070": {
+      "top1_acc": 0.75,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-071": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-072": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-073": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-074": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-075": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-076": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-077": {
+      "top1_acc": 0.75,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-078": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-079": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-080": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-081": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-082": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-083": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-084": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-085": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-086": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-087": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 6
+    },
+    "SKU-088": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-089": {
+      "top1_acc": 0.75,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-090": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-091": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-092": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-093": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-094": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-095": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-096": {
+      "top1_acc": 0.5,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-097": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-098": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-099": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-100": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-101": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-102": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-103": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-104": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-105": {
+      "top1_acc": 0.8,
+      "top5_acc": 0.8,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-106": {
+      "top1_acc": 0.8571428571428571,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 7
+    },
+    "SKU-107": {
+      "top1_acc": 0.8571428571428571,
+      "top5_acc": 0.8571428571428571,
+      "top10_acc": 1.0,
+      "num_val_images": 7
+    },
+    "SKU-108": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-109": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 4
+    },
+    "SKU-110": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-111": {
+      "top1_acc": 0.6,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 5
+    },
+    "SKU-112": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 3
+    },
+    "SKU-113": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-114": {
+      "top1_acc": 0.5,
+      "top5_acc": 0.5,
+      "top10_acc": 0.5,
+      "num_val_images": 2
+    },
+    "SKU-115": {
+      "top1_acc": 0.5555555555555556,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 9
+    },
+    "SKU-116": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-117": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-118": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-119": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-120": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-121": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-122": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-123": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-124": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-125": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-126": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-127": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-128": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-129": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-130": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-131": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-132": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-133": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-134": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-135": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-136": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-137": {
+      "top1_acc": 0.0,
+      "top5_acc": 0.0,
+      "top10_acc": 0.0,
+      "num_val_images": 1
+    },
+    "SKU-138": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-139": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    },
+    "SKU-140": {
+      "top1_acc": 1.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 2
+    },
+    "SKU-141": {
+      "top1_acc": 0.0,
+      "top5_acc": 1.0,
+      "top10_acc": 1.0,
+      "num_val_images": 1
+    }
+  },
+  "clip_labeled_only_accuracy": {
+    "top1": 0.8359,
+    "top5": 0.9195,
+    "top10": 0.9381
+  }
+}

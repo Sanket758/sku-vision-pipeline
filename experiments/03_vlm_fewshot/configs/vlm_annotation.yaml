@@ -1,0 +1,92 @@
+# VLM Annotation Pipeline Configuration
+# This file configures the VLM annotation pipeline for German supermarket shelf images
+
+# Ollama Configuration
+ollama_url: "http://localhost:11434"
+model_name: "qwen3-vl:4b"
+
+# Annotation Parameters
+max_products: 20
+confidence_threshold: 0.7
+use_german_text: true
+output_format: "yolo"
+
+# Processing Configuration
+batch_size: 5
+retry_attempts: 3
+retry_delay: 5
+
+# Output Configuration
+output_dir: "experiments/03_vlm_fewshot/annotations"
+save_detailed: true
+save_yolo_format: true
+save_summary: true
+
+# Quality Control
+min_confidence: 0.5
+max_images_per_batch: 10
+enable_human_review: true
+human_review_threshold: 0.8
+
+# Logging
+log_level: "INFO"
+metrics_enabled: true
+
+# Hardware Optimization
+use_gpu: true
+batch_processing: true
+enable_caching: true
+
+# German Text Handling
+german_text_handling:
+  preserve_case: true
+  transliterate: true
+  category_mapping:
+    "getränk": "beverage"
+    "milch": "dairy"
+    "brot": "bakery"
+    "fleisch": "meat"
+    "fisch": "seafood"
+    "gemüse": "vegetable"
+    "obst": "fruit"
+    "reinigung": "cleaning"
+    "haushalt": "household"
+    "kosmetik": "cosmetics"
+    "medikament": "medicine"
+
+# Annotation Quality Metrics
+quality_metrics:
+  precision_threshold: 0.7
+  recall_threshold: 0.7
+  f1_threshold: 0.7
+  iou_threshold: 0.5
+
+# Integration with Existing Experiments
+experiment_integration:
+  yolo_detection_path: "experiments/01_yolo_detection"
+  retrieval_system_path: "experiments/02_retrieval_system"
+  enable_active_learning: true
+  active_learning_threshold: 0.6
+  retrain_frequency: 10
+
+# Human Review Workflow
+human_review:
+  review_interface: "cvat"
+  review_threshold: 0.8
+  auto_accept_confidence: 0.95
+  manual_review_required: true
+  feedback_loop: true
+
+# Data Management
+data_management:
+  backup_annotations: true
+  version_control: true
+  annotation_history: true
+  quality_checkpoints: true
+
+# Performance Optimization
+performance:
+  parallel_processing: true
+  cache_annotations: true
+  optimize_memory: true
+  use_half_precision: true

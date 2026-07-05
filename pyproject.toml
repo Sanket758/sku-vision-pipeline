@@ -1,0 +1,19 @@
+[project]
+name = "thesis-ops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "arxiv>=3.0.0",
+    "beautifulsoup4>=4.14.3",
+    "easyocr>=1.7.2",
+    "faiss-cpu>=1.8.0",
+    "paddleocr>=3.6.0",
+    "pillow>=12.2.0",
+    "pymupdf>=1.27.2.3",
+    "pypdf2>=3.0.1",
+    "requests>=2.33.1",
+    "sentence-transformers>=5.5.0",
+    "watchdog>=6.0.0",
+]

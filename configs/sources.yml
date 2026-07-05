@@ -1,0 +1,29 @@
+# This file is used by the scan architecture
+keywords:
+  primary:
+    - "retail object detection"
+    - "SKU recognition"
+    - "dense shelf"
+    - "retail computer vision"
+    - "two-pass OCR"
+    - "retail text detection"
+  exclusion:
+    - "medical imaging"
+    - "astronomy"
+
+tracked_authors:
+  - "Eran Goldman"
+  - "Philipp Follmann"
+
+tracked_labs:
+  - "FAIR"
+
+venues:
+  - "CVPR"
+  - "ICCV"
+  - "ECCV"
+
+recency_window: 5  # years
+database_order:
+  - arxiv
+  - openalex

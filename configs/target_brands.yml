@@ -1,0 +1,342 @@
+# Target Brands for Retail Product Recognition
+# Categories aligned with thesis scope: Drinks, Chocolates, PCPs, Soups/Ready-to-eat, Coffee
+# Brands commonly found at Aldi, Lidl, Netto, Kaufland (German hard-discounters)
+
+categories:
+  drinks:
+    name: "Drinks (Wines, Beer, Whiskey, Spirits)"
+    brands:
+      - name: "Beck's"
+        aliases: ["becks", "beck's"]
+        type: beer
+      - name: "Heineken"
+        aliases: ["heineken"]
+        type: beer
+      - name: "Jever"
+        aliases: ["jever"]
+        type: beer
+      - name: "Franziskaner"
+        aliases: ["franziskaner"]
+        type: beer
+      - name: "Erdinger"
+        aliases: ["erdinger"]
+        type: beer
+      - name: "Paulaner"
+        aliases: ["paulaner"]
+        type: beer
+      - name: "Radeberger"
+        aliases: ["radeberger"]
+        type: beer
+      - name: "Krombacher"
+        aliases: ["krombacher"]
+        type: beer
+      - name: "Warsteiner"
+        aliases: ["warsteiner"]
+        type: beer
+      - name: "Veltins"
+        aliases: ["veltins"]
+        type: beer
+      - name: "Jim Beam"
+        aliases: ["jim beam", "jimbeam"]
+        type: whiskey
+      - name: "Jack Daniel's"
+        aliases: ["jack daniel", "jackdaniel", "jack daniels"]
+        type: whiskey
+      - name: "Jameson"
+        aliases: ["jameson"]
+        type: whiskey
+      - name: "Johnnie Walker"
+        aliases: ["johnnie walker", "johnniewalker", "johnny walker"]
+        type: whiskey
+      - name: "Ballantine's"
+        aliases: ["ballantine", "ballantines"]
+        type: whiskey
+      - name: "Jägermeister"
+        aliases: ["jagermeister", "jägermeister"]
+        type: spirits
+      - name: "Baileys"
+        aliases: ["baileys"]
+        type: spirits
+      - name: "Freixenet"
+        aliases: ["freixenet"]
+        type: wine
+      - name: "Moser Roth"
+        aliases: ["moser roth", "moserroth"]
+        type: wine
+      - name: "Riesling"
+        aliases: ["riesling"]
+        type: wine
+      - name: "Dornfelder"
+        aliases: ["dornfelder"]
+        type: wine
+      - name: "Spätburgunder"
+        aliases: ["spätburgunder", "spaetburgunder", "spatburgunder"]
+        type: wine
+      - name: "Merlot"
+        aliases: ["merlot"]
+        type: wine
+      - name: "Gallo"
+        aliases: ["gallo"]
+        type: wine
+      - name: "Barefoot"
+        aliases: ["barefoot"]
+        type: wine
+      - name: "Kaya"
+        aliases: ["kaya"]
+        type: wine
+      - name: "Lugana"
+        aliases: ["lugana"]
+        type: wine
+      - name: "Cinzano"
+        aliases: ["cinzano"]
+        type: spirits
+      - name: "Ouzo"
+        aliases: ["ouzo"]
+        type: spirits
+
+  chocolates:
+    name: "Chocolates & Confectionery"
+    brands:
+      - name: "Milka"
+        aliases: ["milka"]
+        type: chocolate
+      - name: "Lindt"
+        aliases: ["lindt"]
+        type: chocolate
+      - name: "Lindor"
+        aliases: ["lindor"]
+        type: chocolate
+      - name: "Ritter Sport"
+        aliases: ["ritter sport", "rittersport"]
+        type: chocolate
+      - name: "Cadbury"
+        aliases: ["cadbury"]
+        type: chocolate
+      - name: "Merci"
+        aliases: ["merci"]
+        type: chocolate
+      - name: "Kinder"
+        aliases: ["kinder"]
+        type: chocolate
+      - name: "Ferrero"
+        aliases: ["ferrero"]
+        type: chocolate
+      - name: "Raffaello"
+        aliases: ["raffaello"]
+        type: chocolate
+      - name: "Nutella"
+        aliases: ["nutella"]
+        type: chocolate
+      - name: "Toffifee"
+        aliases: ["toffifee"]
+        type: chocolate
+      - name: "Knoppers"
+        aliases: ["knoppers", "knopper"]
+        type: chocolate
+      - name: "Biscoteria"
+        aliases: ["biscoteria"]
+        type: chocolate
+      - name: "Choceur"
+        aliases: ["choceur"]
+        type: chocolate
+      - name: "Moser Roth"
+        aliases: ["moser roth"]
+        type: chocolate
+      - name: "Fin Carré"
+        aliases: ["fin carré", "fincarre", "fin carre"]
+        type: chocolate
+      - name: "J.D. Gross"
+        aliases: ["jd gross", "j.d. gross", "jdgross"]
+        type: chocolate
+      - name: "Haribo"
+        aliases: ["haribo"]
+        type: confectionery
+
+  personal_care:
+    name: "Personal Care Products (PCPs)"
+    brands:
+      - name: "Colgate"
+        aliases: ["colgate", "colgate total", "colgate max"]
+        type: toothpaste
+      - name: "Elmex"
+        aliases: ["elmex"]
+        type: toothpaste
+      - name: "Odol-Med3"
+        aliases: ["odolmed3", "odol med3", "odol-med3", "odolmed", "odol"]
+        type: toothpaste
+      - name: "Oral-B"
+        aliases: ["oralb", "oral b", "oral-b"]
+        type: toothbrush
+      - name: "Dr. Best"
+        aliases: ["dr best", "drbest", "dr.best"]
+        type: toothbrush
+      - name: "Sensodyne"
+        aliases: ["sensodyne", "sensodyne proschmelz", "sensodyne repair"]
+        type: toothpaste
+      - name: "Parodontax"
+        aliases: ["parodontax", "paradontax"]
+        type: toothpaste
+      - name: "Meridol"
+        aliases: ["meridol"]
+        type: toothpaste
+      - name: "Dentalux"
+        aliases: ["dentalux"]
+        type: toothpaste
+      - name: "Lacura"
+        aliases: ["lacura"]
+        type: personal_care
+      - name: "Cien"
+        aliases: ["cien"]
+        type: personal_care
+      - name: "Nivea"
+        aliases: ["nivea"]
+        type: personal_care
+      - name: "L'Oréal"
+        aliases: ["loreal", "l'oréal", "l'oreal", "loreal paris"]
+        type: hair_care
+      - name: "Garnier"
+        aliases: ["garnier"]
+        type: hair_care
+      - name: "Schwarzkopf"
+        aliases: ["schwarzkopf"]
+        type: hair_care
+      - name: "Syoss"
+        aliases: ["syoss"]
+        type: hair_care
+      - name: "Gliss Kur"
+        aliases: ["gliss", "gliss kur"]
+        type: hair_care
+      - name: "Axe"
+        aliases: ["axe", "lynx"]
+        type: deodorant
+      - name: "Rexona"
+        aliases: ["rexona"]
+        type: deodorant
+      - name: "Dove"
+        aliases: ["dove"]
+        type: personal_care
+      - name: "Nivea Men"
+        aliases: ["nivea men", "niveamen"]
+        type: deodorant
+      - name: "Frosch"
+        aliases: ["frosch"]
+        type: cleaning
+      - name: "Formil"
+        aliases: ["formil"]
+        type: cleaning
+      - name: "Ariel"
+        aliases: ["ariel"]
+        type: cleaning
+      - name: "Lenor"
+        aliases: ["lenor"]
+        type: cleaning
+      - name: "Domestos"
+        aliases: ["domestos"]
+        type: cleaning
+      - name: "Vanish"
+        aliases: ["vanish"]
+        type: cleaning
+      - name: "Sagrotan"
+        aliases: ["sagrotan"]
+        type: cleaning
+      - name: "Head & Shoulders"
+        aliases: ["head shoulders", "headandshoulders", "head & shoulders"]
+        type: hair_care
+      - name: "Plantur"
+        aliases: ["plantur"]
+        type: hair_care
+      - name: "Guhl"
+        aliases: ["guhl"]
+        type: hair_care
+      - name: "Taft"
+        aliases: ["taft"]
+        type: hair_care
+      - name: "Schauma"
+        aliases: ["schauma"]
+        type: hair_care
+      - name: "Balea"
+        aliases: ["balea"]
+        type: personal_care
+      - name: "Palmolive"
+        aliases: ["palmolive"]
+        type: personal_care
+      - name: "Dove"
+        aliases: ["dove men", "dove care"]
+        type: personal_care
+
+  soups_ready_to_eat:
+    name: "Soups & Ready-to-Eat"
+    brands:
+      - name: "Knorr"
+        aliases: ["knorr", "knor"]
+        type: soup
+      - name: "Maggi"
+        aliases: ["maggi"]
+        type: soup
+      - name: "Erasco"
+        aliases: ["erasco"]
+        type: soup
+      - name: "Heisse Tasse"
+        aliases: ["heisse tasse", "heiße tasse"]
+        type: soup
+      - name: "Miracoli"
+        aliases: ["miracoli"]
+        type: pasta
+      - name: "Bonduelle"
+        aliases: ["bonduelle"]
+        type: canned
+      - name: "Beste Ernte"
+        aliases: ["beste ernte", "beste ernte"]
+        type: canned
+      - name: "Kings Crown"
+        aliases: ["kings crown", "kingscrown"]
+        type: canned
+      - name: "Speisezeit"
+        aliases: ["speisezeit"]
+        type: ready_meal
+      - name: "Buss"
+        aliases: ["buss"]
+        type: ready_meal
+      - name: "Thomy"
+        aliases: ["thomy"]
+        type: sauce
+      - name: "Barilla"
+        aliases: ["barilla"]
+        type: pasta
+      - name: "Mutti"
+        aliases: ["mutti"]
+        type: sauce
+
+  coffee:
+    name: "Coffee & Capsules"
+    brands:
+      - name: "Jacobs"
+        aliases: ["jacobs", "jacobs krönung", "jacobs kronung", "jacobs lung"]
+        type: coffee
+      - name: "Tassimo"
+        aliases: ["tassimo"]
+        type: coffee_capsules
+      - name: "Dallmayr"
+        aliases: ["dallmayr", "dallmoyr"]
+        type: coffee
+      - name: "Capsa"
+        aliases: ["capsa", "dallmayr capsa", "capsa doro"]
+        type: coffee_capsules
+      - name: "Barissimo"
+        aliases: ["barissimo", "barrisimo", "barissiho"]
+        type: coffee
+      - name: "Nescafé"
+        aliases: ["nescafe", "nescafé"]
+        type: coffee
+      - name: "Tchibo"
+        aliases: ["tchibo"]
+        type: coffee
+      - name: "Senseo"
+        aliases: ["senseo"]
+        type: coffee_pads
+      - name: "Lavazza"
+        aliases: ["lavazza"]
+        type: coffee
+      - name: "Segafredo"
+        aliases: ["segafredo"]
+        type: coffee
