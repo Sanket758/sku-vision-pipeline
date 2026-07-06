@@ -12,38 +12,14 @@ import sys
 import os
 from pathlib import Path
 
-# Add project root to path
-ROOT = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(ROOT))
-
 # Paths
-MODEL_PATH = Path("/home/sanket758/Education/BSBI/Masters-Thesis/experiments/01_yolo_detection/runs/detect/runs/yolo_v8n_baseline/weights/best.pt")
-TEST_IMAGES_DIR = Path("/home/sanket758/Education/BSBI/Masters-Thesis/experiments/01_yolo_detection/data/curated_yolo/images/test")
+MODEL_PATH = Path("/home/sanket758/Education/BSBI/Masters-Thesis/THESIS_GITHUB_REPO/models/yolov8n_148skus.pt")
+TEST_IMAGES_DIR = Path("/home/sanket758/Education/BSBI/Masters-Thesis/Dataset/thesis-sku-dataset/yolo/images/test")
 DEMO_SHELVES_DIR = Path(__file__).resolve().parent.parent / "public" / "demo" / "shelves"
 DETECTIONS_JS_PATH = Path(__file__).resolve().parent.parent / "src" / "detections.js"
-MASTER_REFS_DIR = Path("/home/sanket758/Education/BSBI/Masters-Thesis/experiments/curated_pipeline/master_references")
-EXEMPLARS_DIR = Path("/home/sanket758/Education/BSBI/Masters-Thesis/experiments/curated_pipeline/exemplars")
 
-# SKU-to-product name mapping from class_catalogue.json
-CATALOGUE_PATH = Path("/home/sanket758/Education/BSBI/Masters-Thesis/experiments/annotation_tool/data/class_catalogue.json")
-
-def load_catalogue(catalogue_path):
-    """Load SKU-to-product name mapping from class catalogue."""
-    with open(catalogue_path) as f:
-        data = json.load(f)
-    
-    # Map SKU codes (SKU-0001 format) to product names
-    # The curated YOLO uses SKU-001 format (no leading zero)
-    sku_names = {}
-    for cls in data["classes"]:
-        sku_code = cls["sku_code"]  # e.g., "SKU-0001"
-        # Convert to demo format: "SKU-001" (remove leading zero after hyphen)
-        parts = sku_code.split("-")
-        num = int(parts[1])  # Remove leading zeros
-        demo_sku = f"SKU-{num:03d}"  # Pad to 3 digits
-        sku_names[demo_sku] = cls["class_name"]
-    
-    return sku_names
+# No SKU-to-name mapping exists — we only have SKU codes (001–148)
+# The demo displays SKU codes directly
 
 def extract_shelf_label(filename):
     """Generate a human-readable label from the filename."""
@@ -92,13 +68,8 @@ def main():
     import torch
     from ultralytics import YOLO
     
-    # Load catalogue for product names
-    print("\n[1/5] Loading product catalogue...")
-    sku_names = load_catalogue(CATALOGUE_PATH)
-    print(f"  Loaded {len(sku_names)} SKU-to-name mappings")
-    
     # Load model
-    print(f"\n[2/5] Loading YOLOv8n baseline from: {MODEL_PATH}")
+    print(f"\n[1/5] Loading YOLOv8n model from: {MODEL_PATH}")
     if not MODEL_PATH.exists():
         print(f"  ERROR: Model not found at {MODEL_PATH}")
         sys.exit(1)
@@ -108,12 +79,12 @@ def main():
     print(f"  Model loaded on {device}")
     
     # Get all test images
-    print(f"\n[3/5] Finding test images in: {TEST_IMAGES_DIR}")
+    print(f"\n[2/4] Finding test images in: {TEST_IMAGES_DIR}")
     test_images = sorted(TEST_IMAGES_DIR.glob("*.jpg")) + sorted(TEST_IMAGES_DIR.glob("*.png"))
     print(f"  Found {len(test_images)} test images")
     
     # Copy images to demo shelves directory and run inference
-    print(f"\n[4/5] Running inference on {len(test_images)} images...")
+    print(f"\n[3/4] Running inference on {len(test_images)} images...")
     
     os.makedirs(DEMO_SHELVES_DIR, exist_ok=True)
     
@@ -202,9 +173,9 @@ def main():
         "retrieval_top1_hybrid_k3": 0.791,
         "pipeline_latency_per_crop_ms": 38,
         "vlm_latency_per_image_s": 35,
-        "total_skus": 110,
+        "total_skus": 148,
         "total_exemplars": 2790,
-        "model": "YOLOv8n Baseline",
+        "model": "YOLOv8n (148 SKU, Tuned)",
         "model_params": "3.34M",
         "test_images": len(test_images),
         "inference_device": device
@@ -263,7 +234,7 @@ def main():
     }
     
     # Generate the JS file
-    print(f"\n[5/5] Writing detections.js...")
+    print(f"\n[4/4] Writing detections.js...")
     
     js_content = "const detectionData = " + json.dumps(detection_data, indent=2) + ";\nexport default detectionData;\n"
     
