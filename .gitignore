@@ -13,6 +13,10 @@ __pycache__/
 node_modules/
 demo-ui/node_modules/
 
+# Build output
+dist/
+demo-ui/dist/
+
 # Data (uploaded separately to Kaggle)
 data/
 Dataset/

@@ -1,0 +1,814 @@
+{
+  "images": [
+    {
+      "filename": "demo/shelves/IMG20260611210028.jpg",
+      "label": "Kaufland Shelf (Front)",
+      "source": "Kaufland, Aisle Display",
+      "detections": [
+        {
+          "sku": "SKU-001",
+          "confidence": 0.354,
+          "bbox": {
+            "x": 14.9,
+            "y": 75.0,
+            "w": 11.2,
+            "h": 4.0
+          }
+        },
+        {
+          "sku": "SKU-068",
+          "confidence": 0.338,
+          "bbox": {
+            "x": 52.5,
+            "y": 11.7,
+            "w": 12.5,
+            "h": 11.6
+          }
+        },
+        {
+          "sku": "SKU-068",
+          "confidence": 0.307,
+          "bbox": {
+            "x": 40.5,
+            "y": 11.8,
+            "w": 12.9,
+            "h": 12.5
+          }
+        }
+      ]
+    },
+    {
+      "filename": "demo/shelves/IMG20260611210046.jpg",
+      "label": "Kaufland Shelf (Side Angle)",
+      "source": "Kaufland, Side Display",
+      "detections": [
+        {
+          "sku": "SKU-048",
+          "confidence": 0.709,
+          "bbox": {
+            "x": 20.3,
+            "y": 51.7,
+            "w": 7.8,
+            "h": 12.9
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.708,
+          "bbox": {
+            "x": 95.0,
+            "y": 50.4,
+            "w": 7.4,
+            "h": 14.2
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.699,
+          "bbox": {
+            "x": 56.8,
+            "y": 82.4,
+            "w": 7.0,
+            "h": 14.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.698,
+          "bbox": {
+            "x": 96.3,
+            "y": 83.9,
+            "w": 7.3,
+            "h": 17.1
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.697,
+          "bbox": {
+            "x": 68.0,
+            "y": 82.3,
+            "w": 6.8,
+            "h": 14.0
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.677,
+          "bbox": {
+            "x": 73.6,
+            "y": 81.5,
+            "w": 7.2,
+            "h": 12.7
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.672,
+          "bbox": {
+            "x": 36.2,
+            "y": 51.8,
+            "w": 5.6,
+            "h": 12.6
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.659,
+          "bbox": {
+            "x": 85.0,
+            "y": 82.3,
+            "w": 7.2,
+            "h": 14.1
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.652,
+          "bbox": {
+            "x": 76.8,
+            "y": 50.7,
+            "w": 7.0,
+            "h": 12.5
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.64,
+          "bbox": {
+            "x": 31.6,
+            "y": 52.1,
+            "w": 6.5,
+            "h": 13.8
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.635,
+          "bbox": {
+            "x": 62.3,
+            "y": 82.3,
+            "w": 7.0,
+            "h": 13.9
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.631,
+          "bbox": {
+            "x": 90.5,
+            "y": 82.8,
+            "w": 7.6,
+            "h": 14.7
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.59,
+          "bbox": {
+            "x": 26.1,
+            "y": 52.2,
+            "w": 6.7,
+            "h": 13.9
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.575,
+          "bbox": {
+            "x": 65.0,
+            "y": 51.2,
+            "w": 7.3,
+            "h": 12.7
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.57,
+          "bbox": {
+            "x": 41.1,
+            "y": 51.6,
+            "w": 6.9,
+            "h": 12.8
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.568,
+          "bbox": {
+            "x": 79.1,
+            "y": 81.9,
+            "w": 7.5,
+            "h": 13.7
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.567,
+          "bbox": {
+            "x": 24.5,
+            "y": 82.5,
+            "w": 7.2,
+            "h": 13.2
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.564,
+          "bbox": {
+            "x": 53.3,
+            "y": 51.1,
+            "w": 6.7,
+            "h": 13.1
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.554,
+          "bbox": {
+            "x": 51.2,
+            "y": 82.3,
+            "w": 6.7,
+            "h": 14.1
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.55,
+          "bbox": {
+            "x": 13.6,
+            "y": 51.8,
+            "w": 8.1,
+            "h": 12.9
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.54,
+          "bbox": {
+            "x": 47.4,
+            "y": 51.0,
+            "w": 6.9,
+            "h": 12.6
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.537,
+          "bbox": {
+            "x": 46.2,
+            "y": 82.0,
+            "w": 6.8,
+            "h": 13.6
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.524,
+          "bbox": {
+            "x": 13.9,
+            "y": 84.6,
+            "w": 7.0,
+            "h": 15.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.523,
+          "bbox": {
+            "x": 3.7,
+            "y": 82.4,
+            "w": 7.4,
+            "h": 12.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.52,
+          "bbox": {
+            "x": 29.7,
+            "y": 82.3,
+            "w": 7.1,
+            "h": 13.5
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.487,
+          "bbox": {
+            "x": 8.8,
+            "y": 83.8,
+            "w": 7.4,
+            "h": 15.1
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.437,
+          "bbox": {
+            "x": 70.8,
+            "y": 50.8,
+            "w": 6.8,
+            "h": 12.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.433,
+          "bbox": {
+            "x": 35.2,
+            "y": 83.7,
+            "w": 6.8,
+            "h": 16.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.425,
+          "bbox": {
+            "x": 19.2,
+            "y": 83.5,
+            "w": 7.1,
+            "h": 13.4
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.409,
+          "bbox": {
+            "x": 7.4,
+            "y": 52.4,
+            "w": 7.1,
+            "h": 14.0
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.404,
+          "bbox": {
+            "x": 98.6,
+            "y": 50.4,
+            "w": 2.9,
+            "h": 14.5
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.402,
+          "bbox": {
+            "x": 82.7,
+            "y": 50.7,
+            "w": 7.2,
+            "h": 13.3
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.391,
+          "bbox": {
+            "x": 88.8,
+            "y": 50.8,
+            "w": 7.4,
+            "h": 13.7
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.374,
+          "bbox": {
+            "x": 58.9,
+            "y": 51.4,
+            "w": 6.4,
+            "h": 13.4
+          }
+        },
+        {
+          "sku": "SKU-048",
+          "confidence": 0.363,
+          "bbox": {
+            "x": 40.5,
+            "y": 82.4,
+            "w": 6.9,
+            "h": 14.4
+          }
+        }
+      ]
+    },
+    {
+      "filename": "demo/shelves/IMG20260620185548.jpg",
+      "label": "Lidl Shelf (Coffee & Tea)",
+      "source": "Lidl, Coffee Aisle",
+      "detections": [
+        {
+          "sku": "SKU-068",
+          "confidence": 0.91,
+          "bbox": {
+            "x": 4.8,
+            "y": 6.7,
+            "w": 9.4,
+            "h": 13.5
+          }
+        },
+        {
+          "sku": "SKU-068",
+          "confidence": 0.798,
+          "bbox": {
+            "x": 18.7,
+            "y": 7.1,
+            "w": 13.1,
+            "h": 14.1
+          }
+        },
+        {
+          "sku": "SKU-079",
+          "confidence": 0.609,
+          "bbox": {
+            "x": 44.0,
+            "y": 28.2,
+            "w": 16.8,
+            "h": 7.9
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.604,
+          "bbox": {
+            "x": 3.1,
+            "y": 36.3,
+            "w": 6.2,
+            "h": 7.7
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.543,
+          "bbox": {
+            "x": 3.1,
+            "y": 29.0,
+            "w": 6.2,
+            "h": 8.3
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.538,
+          "bbox": {
+            "x": 86.3,
+            "y": 29.2,
+            "w": 13.9,
+            "h": 7.0
+          }
+        },
+        {
+          "sku": "SKU-080",
+          "confidence": 0.526,
+          "bbox": {
+            "x": 9.1,
+            "y": 54.3,
+            "w": 17.4,
+            "h": 14.0
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.507,
+          "bbox": {
+            "x": 72.7,
+            "y": 35.8,
+            "w": 12.9,
+            "h": 7.0
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.495,
+          "bbox": {
+            "x": 85.3,
+            "y": 35.6,
+            "w": 14.2,
+            "h": 7.2
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.442,
+          "bbox": {
+            "x": 28.9,
+            "y": 36.1,
+            "w": 15.8,
+            "h": 8.0
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.411,
+          "bbox": {
+            "x": 59.4,
+            "y": 36.3,
+            "w": 15.6,
+            "h": 8.1
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.405,
+          "bbox": {
+            "x": 73.4,
+            "y": 29.3,
+            "w": 13.2,
+            "h": 7.1
+          }
+        },
+        {
+          "sku": "SKU-068",
+          "confidence": 0.391,
+          "bbox": {
+            "x": 11.5,
+            "y": 7.0,
+            "w": 10.6,
+            "h": 14.1
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.389,
+          "bbox": {
+            "x": 28.3,
+            "y": 28.8,
+            "w": 16.1,
+            "h": 8.1
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.38,
+          "bbox": {
+            "x": 13.5,
+            "y": 36.2,
+            "w": 16.0,
+            "h": 8.0
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.371,
+          "bbox": {
+            "x": 13.7,
+            "y": 28.8,
+            "w": 16.2,
+            "h": 8.0
+          }
+        },
+        {
+          "sku": "SKU-079",
+          "confidence": 0.364,
+          "bbox": {
+            "x": 28.3,
+            "y": 28.5,
+            "w": 16.6,
+            "h": 8.0
+          }
+        },
+        {
+          "sku": "SKU-074",
+          "confidence": 0.342,
+          "bbox": {
+            "x": 24.9,
+            "y": 73.7,
+            "w": 9.9,
+            "h": 12.7
+          }
+        },
+        {
+          "sku": "SKU-074",
+          "confidence": 0.331,
+          "bbox": {
+            "x": 33.3,
+            "y": 73.4,
+            "w": 9.7,
+            "h": 12.2
+          }
+        },
+        {
+          "sku": "SKU-070",
+          "confidence": 0.33,
+          "bbox": {
+            "x": 31.7,
+            "y": 54.4,
+            "w": 10.3,
+            "h": 13.9
+          }
+        },
+        {
+          "sku": "SKU-069",
+          "confidence": 0.315,
+          "bbox": {
+            "x": 59.8,
+            "y": 28.8,
+            "w": 16.0,
+            "h": 8.3
+          }
+        }
+      ]
+    },
+    {
+      "filename": "demo/shelves/IMG20260620185559.jpg",
+      "label": "Netto Shelf (Beverages)",
+      "source": "Netto, Beverage Section",
+      "detections": []
+    },
+    {
+      "filename": "demo/shelves/IMG20260620185605.jpg",
+      "label": "Lidl Shelf (Snacks)",
+      "source": "Lidl, Snack Aisle",
+      "detections": [
+        {
+          "sku": "SKU-107",
+          "confidence": 0.741,
+          "bbox": {
+            "x": 42.7,
+            "y": 32.2,
+            "w": 13.1,
+            "h": 16.9
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.741,
+          "bbox": {
+            "x": 32.4,
+            "y": 32.0,
+            "w": 11.5,
+            "h": 15.9
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.697,
+          "bbox": {
+            "x": 22.7,
+            "y": 31.9,
+            "w": 12.5,
+            "h": 16.9
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.689,
+          "bbox": {
+            "x": 65.9,
+            "y": 32.4,
+            "w": 13.2,
+            "h": 17.1
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.638,
+          "bbox": {
+            "x": 87.4,
+            "y": 32.8,
+            "w": 13.6,
+            "h": 17.3
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.634,
+          "bbox": {
+            "x": 76.7,
+            "y": 32.6,
+            "w": 12.8,
+            "h": 16.8
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.605,
+          "bbox": {
+            "x": 54.8,
+            "y": 32.4,
+            "w": 12.1,
+            "h": 17.0
+          }
+        },
+        {
+          "sku": "SKU-107",
+          "confidence": 0.563,
+          "bbox": {
+            "x": 10.5,
+            "y": 32.0,
+            "w": 14.8,
+            "h": 17.5
+          }
+        },
+        {
+          "sku": "SKU-105",
+          "confidence": 0.536,
+          "bbox": {
+            "x": 92.8,
+            "y": 8.0,
+            "w": 14.4,
+            "h": 15.9
+          }
+        },
+        {
+          "sku": "SKU-108",
+          "confidence": 0.448,
+          "bbox": {
+            "x": 13.6,
+            "y": 55.2,
+            "w": 12.3,
+            "h": 14.3
+          }
+        },
+        {
+          "sku": "SKU-106",
+          "confidence": 0.419,
+          "bbox": {
+            "x": 15.9,
+            "y": 8.3,
+            "w": 17.3,
+            "h": 16.4
+          }
+        },
+        {
+          "sku": "SKU-105",
+          "confidence": 0.365,
+          "bbox": {
+            "x": 29.8,
+            "y": 8.3,
+            "w": 15.3,
+            "h": 16.5
+          }
+        },
+        {
+          "sku": "SKU-105",
+          "confidence": 0.303,
+          "bbox": {
+            "x": 34.4,
+            "y": 55.2,
+            "w": 11.3,
+            "h": 13.6
+          }
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "detection_map50": 0.847,
+    "detection_map5095": 0.612,
+    "recognition_top1": 0.791,
+    "recognition_top3": 0.903,
+    "retrieval_top1_dino": 0.514,
+    "retrieval_top1_hybrid_k3": 0.791,
+    "total_skus": 148,
+    "total_exemplars": 2790,
+    "pipeline_latency_per_crop_ms": 38,
+    "vlm_latency_per_image_s": 35
+  },
+  "experiments": [
+    {
+      "id": "YOLOv8n-DET",
+      "name": "YOLOv8n \u2014 Product Detection",
+      "precision": 0.847,
+      "recall": 0.803,
+      "f1": 0.824,
+      "status": "completed"
+    },
+    {
+      "id": "YOLOv10n-DET",
+      "name": "YOLOv10n \u2014 Product Detection",
+      "precision": 0.831,
+      "recall": 0.788,
+      "f1": 0.808,
+      "status": "completed"
+    },
+    {
+      "id": "DINO-K3-RET",
+      "name": "DINOv3 Retrieval (3-shot)",
+      "accuracy": 0.605,
+      "status": "completed"
+    },
+    {
+      "id": "Hybrid-K3-RET",
+      "name": "DINOv3+MobileNetV2 Hybrid (3-shot)",
+      "accuracy": 0.791,
+      "status": "completed"
+    },
+    {
+      "id": "CLIP-ZS-RET",
+      "name": "CLIP Zero-Shot Retrieval",
+      "top1_acc": 0.114,
+      "top5_acc": 0.285,
+      "status": "completed"
+    },
+    {
+      "id": "VLM-LLAVA",
+      "name": "LLaVA 7B VLM Annotation",
+      "avg_latency_s": 35,
+      "hallucination_rate": "high",
+      "status": "failed"
+    }
+  ]
+}
