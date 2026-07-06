@@ -1,33 +1,39 @@
-arxiv>=2.1.0
-requests>=2.31.0
-beautifulsoup4>=4.12.0
-PyMuPDF>=1.23.0
+# ============================================================
+# Thesis Code — Automated SKU Detection & Recognition
+# ============================================================
+# Install: pip install -r requirements.txt
+# Python 3.10+ recommended
 
-# VLM Annotation Pipeline Dependencies
-requests>=2.31.0
-Pillow>=10.0.0
-numpy>=1.24.0
-pyyaml>=6.0
+# === Deep Learning Framework ===
+torch>=2.0.0
+torchvision>=0.15.0
 
-# Ollama/VLM Integration
-ollama>=0.1.0
-
-# YOLO Integration
+# === YOLO Detection (Ultralytics) ===
 ultralytics>=8.0.0
 
-# Retrieval System
+# === Image Processing ===
+Pillow>=10.0.0
+opencv-python>=4.8.0
+albumentations>=1.3.0
+
+# === Numerical & Data ===
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# === Retrieval System ===
 faiss-cpu>=1.7.4
 sentence-transformers>=2.2.2
+transformers>=4.35.0
 
-# German Text Processing
-langdetect>=1.0.0
+# === VLM/Ollama Integration ===
+ollama>=0.1.0
+requests>=2.31.0
 
-# Visualization and Metrics
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# Progress and Logging
-tqdm>=4.65.0
-
-# Configuration
+# === Configuration & Serialization ===
+pyyaml>=6.0
 configparser>=5.3.0
+
+# === Visualization & Metrics ===
+matplotlib>=3.7.0
+tqdm>=4.65.0
